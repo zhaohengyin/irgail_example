@@ -17,7 +17,7 @@ To train a CDIL agent with pretrained representation network (in extrapolation m
 python ./example/idp.py --cuda --c1 1.3 --c2 1.5 --c3 1.4 --rollout_length 5000 --eval_interval 5000 --num_steps 5000000 --buffer ./assets/idp_expert_buffer.pth --embedding ./assets/idp_pretrained.pth --seed 0
 ````
 
-In the above command, ``--c1 1.3 --c2 1.5 --c3 1.4`` specifies the environment parameter (1.3, 1.5, 1.4). The parameters of experts are around (0.9, 0.9, 0.9). You can change these parameters to do interpolation as well.
+In the above command, ``--c1 1.3 --c2 1.5 --c3 1.4`` specifies the environment parameter (1.3, 1.5, 1.4). The parameters of experts are around (0.9, 0.9, 0.9). Note that these parameters are absolute values (rather than relative value in the paper). You can change these parameters to do interpolation as well.
 
 ``--buffer ./assets/idp_expert_buffer.pth`` specifies the expert demonstration. 
 
