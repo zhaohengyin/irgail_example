@@ -42,7 +42,7 @@ You can then use the trained model for imitation learning.
 ## Ablation
 Navigate to the ``./example/idp_train_representation.py``, and disable the dynamics loss by changing the ``c_f`` value to 0.0. Then, train the representation model and the agent again. 
 
-This time, you will find the agent fail in the extrapolation experiment!
+This time, you will find the performance of agent degrades, in particular in the extrapolation experiment.
 
 ## Acknowledgement
 We gratefully thank [ku2482][1] for a neat imitation learning framework. 🙂
